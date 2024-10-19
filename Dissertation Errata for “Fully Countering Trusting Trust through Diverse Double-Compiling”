@@ -1,0 +1,37 @@
+
+Dissertation Errata for “Fully Countering Trusting Trust through Diverse Double-Compiling”
+David A. Wheeler
+2019-07-25
+
+There are a few minor errata in my PhD dissertation “Fully Countering Trusting Trust through Diverse Double-Compiling”. These errata are trivial and do not impact the fundamentals of anything in the dissertation.
+
+Here are the dissertation errata:
+
+    In the List of Abbreviations and Symbols, page xii: The definition for “OS/360” is listed as “IBM System/390 operating-system”, but it should be “IBM System/360 Operating System”.
+    In the List of Abbreviations and Symbols, page xii: The definition for “sic” is listed as “spelling is correct”. However, historically “sic” is Latin for “thus” and this word represents the full Latin phrase “sic erat scriptum” (“thus was it written”). The phrase “spelling is correct” is simply a backronym that was created later (and is a useful method to remind people of what it means). My thanks to Dan Risacher for noting this on 2014-01-09.
+    Section 1, page 2: [Karger2000] should be [Karger2002]. My thanks to Nils Barth for notifying me on 2014-11-09.
+    Section 2.1, page 5: The dissertation says “the attack was never detected”. I have since learned that although the attack was not detected using the symbolic disassembler, the attack was eventually detected. It turns out that Ken Thompson’s code had a bug, which resulted in a “\0” being added to a string every time it compiled. This bug caused the compiler to get a little bigger each time it was compiled. This growth was eventually detected. Note this was just a bug, and not fundamental to the attack. A better-resourced attacker could spend more time checking that the attack worked correctly, avoiding this problem.
+    Section 2.6, page 21: [Karger2000] should be [Karger2002]. My thanks to Nils Barth for notifying me on 2014-11-09.
+    Section 4.2, page 34: In the sentence “The right-hand-side shows the DDC process” the phrase “right-hand-side” should be “left-hand-side”. My thanks to Joel Moots for reporting this on 2016-12-16.
+    Section 4.5, page 38: “(including as GCC)” should be “(including GCC)”.
+    Section 5.1, second paragraph, page 45: The phrase “that is identical to the cA” should not include “the”.
+    Section 5.2, table 1 (FOL notation), page 50: In the row for “τ1≠τ2” (ASCII “tau_1 != tau_2”), the text “Equivalent to ¬(Φ=Ψ)” should be “Equivalent to ¬(τ1=τ2)”. That row cannot be equivalent to anything involving Phi or Psi, since Phi and Psi were not in the original expression. (This was an incompletely modified copy and paste from an earlier row.)
+    Section 5.3, fourth bullet (Copy...flip), page 52: The text “given Φ=Ψ, this rationale can produce Ψ=Φ” should probably read “given τ1=τ2, this rationale can produce τ2=τ1”. It can be argued that this isn’t an error, but elsewhere Φ and Ψ are used to represent arbitrary formulas, while “=” is only used for comparing terms.
+    Section 5.6.1, page 61: The word “effect” should be “affect” in “as long as those difference do not effect program execution”.
+    Section 5.7.8, page 82: There is a doubled period when there should be just one; “when compiling sA..” should be “when compiling sA.”. Also, “a official” should be “an official”.
+    Section 5.7.9, page 84: The text says “the inputs must not exceed those limits for the result to be portable and deterministic”. A clearer way to say that would be, “the inputs must not cause those limits in the language specification to be exceeded for the compilation result to be portable and deterministic”.
+    Section 7.1.2, Figure 5, page 101: In Stage 2, label “1:0” should be “2:0”, and label “1:1” should be “2:1” (otherwise the labels duplicate the labels of stage 1). (This was another incompletely modified copy and paste.)
+    Section 7.1.4, first line, page 105: The text “The tcc outputs” should be “The tcc compiler outputs”.
+    Section 7.3.1, page 111: The text “There are at least two factors suggest” should be “There are at least two factors that suggest”.
+    Section 8.11, page 129: The text “sot that” should be “so that”.
+    Section 8.13, page 136: The text “to compiler” should be “to compile”.
+    Section 8.14 (paragraph 2), page 136: replace "of of" with "of".
+    Appendix C subheadings, pages 157-162 and the table of contents page vii: The subheadings in appendix C are identified as “9.1”, “9.2”, and “9.3”; they should instead be “C.1”, “C.2”, and “C.3” respectively. 
+
+Again, note that the errata are trivial and do not impact the fundamentals of anything in the dissertation.
+
+This page is <https://dwheeler.com/trusting-trust/dissertation-errata.html>.
+
+For other related information, see my web page on countering the trusting trust attack using diverse double-compiling (DDC). Feel free to see my home page at https://dwheeler.com. You may also want to look at my paper Why OSS/FS? Look at the Numbers! and my book on how to develop secure programs.
+
+(C) Copyright 2011 David A. Wheeler. 
