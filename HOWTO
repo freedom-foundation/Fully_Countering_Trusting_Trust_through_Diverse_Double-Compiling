@@ -1,1 +1,18 @@
 Howto convert .odt file to text
+depends on odt2txt --version
+odt2txt 0.5
+Copyright (c) 2006,2007 Dennis Stosberg <dennis@stosberg.net>
+
+This program is free software; you can redistribute it and/or
+modify it under the terms of the GNU General Public License,
+version 2 as published by the Free Software Foundation
+
+https://github.com/dstosberg/odt2txt
+
+odt2txt --output=out.txt wheeler-trusting-trust-ddc.33e940100d7a44a1b09be934bc17cb0e.odt
+some information is lost by lack of font and flow of document and footnotes interrupted by conversion. Better to keep the PDF. 
+
+Howto export odt to PDF on android 
+depends on collabora app found here https://www.collaboraoffice.com/downloads/Collabora-Office-Android-Snapshot/
+export is not PDF/A1a
+
